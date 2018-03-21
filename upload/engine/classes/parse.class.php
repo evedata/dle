@@ -1438,6 +1438,9 @@ class ParseFilter {
 	
 	function clear_url($url) {
 		global $config;
+		
+		// FIX BUG https://dle-news.ru/bags/1741-nedostatochnaya-filtraciya-dannyh.html
+		$url = str_replace(array("{", "}", "[", "]"),array("%7B", "%7D", "%5B", "%5D"), $url);
 
 		$url = strip_tags( trim( stripslashes( $url ) ) );
 
