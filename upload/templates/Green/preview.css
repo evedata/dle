@@ -1,13 +1,13 @@
-/* =========== В© 2016 Centroarts.com =========== */
+/* =========== © 2016 Centroarts.com =========== */
 @import url(../../templates/Green/fonts/font.css);
 
-/* РЎР±СЂРѕСЃ */
+/* Сброс */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body { line-height: 1 } ol, ul { list-style: none } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none } table { border-collapse: collapse; border-spacing: 0 }
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary { display: block; }
 
 html, html a { -webkit-font-smoothing: antialiased; }
 
-/* РќР°СЃС‚СЂРѕР№РєР° РѕСЃРЅРѕРІРЅРѕР№ С‚РёРїРѕРіСЂР°С„РёРё */
+/* Настройка основной типографии */
 body, select, input, textarea, button {
 	font: normal 14px/1.5 "GothaPro", Arial, Helvetica, sans-serif;
 	letter-spacing: 0.012em;
@@ -24,7 +24,7 @@ body, select, input, textarea, button {
 	a img { border: 0 none; }
 	a > img { vertical-align: bottom; }
 
-	/* Р—Р°РіРѕР»РѕРІРєРё H1-6 */
+	/* Заголовки H1-6 */
 	h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
 		margin: 2em 0 .8em 0;
 		letter-spacing: -0.01em;
@@ -38,7 +38,7 @@ body, select, input, textarea, button {
 	h4, .h4 { font-size: 1.2em; }
 	h5, .h5 { font-size: 1.1em; }
 
-/* Р§Р°СЃС‚С‹Рµ СЃС‚РёР»Рё */
+/* Частые стили */
 .strike { text-decoration: line-through; }
 .nobr { white-space: nowrap; }
 .hide { display: none; }
@@ -64,7 +64,7 @@ a .over { cursor: pointer; }
 
 .cover { background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; background-size: cover; }
 
-/* РќР°СЃС‚СЂРѕР№РєР° РґСЂСѓРіРёС… СЌР»РµРјРµРЅС‚РѕРІ */
+/* Настройка других элементов */
 ul { padding-left: 25px; list-style: disc outside; }
 ol { padding-left: 25px; list-style: decimal outside; }
 
@@ -82,7 +82,7 @@ p,dl,dd,pre,ul,ol,blockquote,table,fieldset { margin-bottom: 1.5em; }
 /* --- Layout --- */
 body { background: #ededed; }
 
-/* --- РќР°СЃС‚СЂРѕР№РєР° РєРЅРѕРїРѕРє --- */
+/* --- Настройка кнопок --- */
 .btn, .bbcodes, .ui-button {
 	border: 0 none;
 	display: inline-block;
@@ -123,7 +123,7 @@ body { background: #ededed; }
 	}
 	.btn > .icon { fill: #fff; }
 
-/* --- РќРѕРІРѕСЃС‚Рё --- */
+/* --- Новости --- */
 .story {
 	position: relative;
 	background-color: #fff;
@@ -149,7 +149,7 @@ body { background: #ededed; }
 	.story > .category, .editdate { margin: 1.5em 0; }
 	.story > .category > .icon { width: 17px; height: 9px; margin: -2px 8px 0 0; fill: #95c00e; }
 
-	/* РљРЅРѕРїРєР° "Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ" */
+	/* Кнопка "Редактировать" */
 	.edit_btn > a { position: relative; overflow: hidden; }
 		.edit_btn > a > i, .edit_btn > a:after, .edit_btn > a:before { 
 			padding-top: 3px;
@@ -169,11 +169,11 @@ body { background: #ededed; }
 		}
 		.edit_btn > a:hover > i { margin-left: 0; }
 
-	/* Р’Р»РѕР¶РµРЅРёСЏ */
+	/* Вложения */
 	.attachment > a { color: inherit; display: block; margin: .4em 0; }
 	.attachment > a > .icon { fill: #95c00e; width: 16px; height: 17px; margin: -.2em .6em 0 0; }
 
-	/* РќРёР¶РЅСЏСЏ С‡Р°СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё */
+	/* Нижняя часть новости */
 	.story_tools { margin-top: 1.5em; position: relative; font-size: .9em; }
 		.story_tools_in { float: left; }
 		.story_tools_in:before {
@@ -190,7 +190,7 @@ body { background: #ededed; }
 		.story_tools_in > .btn, .story_tools_in > .rate { position: relative; z-index: 1; float: left; }
 		.story_tools_in > .btn { float: left; }
 
-		/* РРєРѕРЅРєРё РџР»СЋСЃ Рё РњРёРЅСѓСЃ */
+		/* Иконки Плюс и Минус */
 		.plus_icon, .plus_icon > span { width: 15px; height: 15px; }
 		.plus_icon { border: 4px solid transparent; display: inline-block; vertical-align: middle; position: relative; }
 		.plus_icon > span, .plus_icon > span:before, .plus_icon > span:after {
@@ -214,7 +214,7 @@ body { background: #ededed; }
 		}
 		.plus_icon.minus > span:before { display: none; }
 
-		/* РРєРѕРЅРєР° РїРѕРґСЂРѕР±РЅРµРµ */
+		/* Иконка подробнее */
 		.more_icon { height: 5px; width: 21px; margin-top: 8px; display: flex; justify-content: space-between; }
 			.more_icon > i {
 				float: left;
@@ -223,7 +223,7 @@ body { background: #ededed; }
 				background-color: #fff;
 			}
 
-		/* РЎС‚Р°С‚РёСЃС‚РёРєР° РЅРѕРІРѕСЃС‚Рё */
+		/* Статистика новости */
 		.story_tools > .meta {
 			margin: 11px 18px 0 0;
 			float: right;
@@ -242,7 +242,7 @@ body { background: #ededed; }
     height: 22px;
 }
 
-/*--- Р¦РёС‚Р°С‚С‹, РЎРїРѕР№Р»РµСЂС‹, РљРѕРґ  ---*/
+/*--- Цитаты, Спойлеры, Код  ---*/
 .scriptcode, .title_quote,
 	.title_spoiler, .text_spoiler { padding: 15px 20px; background: #fff; border: 1px solid #e7e7e7; }
 
@@ -265,7 +265,7 @@ body { background: #ededed; }
 	.hide { background-color: #f0f0f0; padding: 5px; color: #4c6d0f; margin: 0 0 1em 0 }
 	.hide a { text-decoration: underline; } .hide a:hover { text-decoration: none }
 	
-/*---РїРѕРєР°Р· РѕСЂРёРіРёРЅР°Р»СЊРЅРѕР№ РєР°СЂС‚РёРЅРєРё Р·Р°РіСЂСѓР¶РµРЅРЅРѕР№ РЅР° СЃР°Р№С‚ РёР· СѓРјРµРЅСЊС€РµРЅРЅРѕР№ РєРѕРїРёРё---*/
+/*---показ оригинальной картинки загруженной на сайт из уменьшенной копии---*/
 .xfieldimagegallery {
   margin: 0;
   padding: 0;  
@@ -330,7 +330,7 @@ body { background: #ededed; }
 	.highslide-controls .highslide-close a { background-position: -180px 0 }
 	.highslide-controls .highslide-close a:hover { background-position: -180px -30px }
 
-/*---РџРѕРґСЃРІРµС‚РєР° РєРѕРґР° РІ С‚РµРіРµ [code]---*/
+/*---Подсветка кода в теге [code]---*/
 pre code { display: block; padding: 0.5em; background: #f9fafa; border: 1px solid #dce7e7; overflow:auto; white-space: pre; }
 	pre .comment, pre .template_comment, pre .diff .header, pre .doctype, pre .lisp .string, pre .javadoc { padding: 0; margin: 0; border:none; box-shadow: none; background-color: inherit; color: #93a1a1; font-style: italic; }
 	pre .keyword, pre .css .rule .keyword, pre .winutils, pre .javascript .title, pre .method, pre .addition, pre .css .tag, pre .lisp .title { color: #859900; }

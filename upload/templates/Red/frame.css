@@ -1,7 +1,7 @@
 html,body{ font-size: 11px; font-family: verdana; height:100%; margin: 0; padding: 0; background: none; }
 img { border:0 none; }
 
-/*--- РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕРµ РјРµРЅСЋ РІ РѕРєРЅРµ Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»РѕРІ ---*/
+/*--- горизонтальное меню в окне загрузки файлов ---*/
 .tabs { font: bold 11px/1.5em Verdana; float:left; width:100%; background:change-background; line-height:normal; }
     .tabs ul { margin:0; padding:10px 10px 0 5px; list-style:none; }
     .tabs li { display:inline; margin:0; padding:0; }
@@ -15,7 +15,7 @@ img { border:0 none; }
     .tabs a:hover span,
     .tabs a.current span { background-position:100% -42px; }
 
-/*--- Р±Р»РѕРє Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»РѕРІ Рё Р·Р°РіСЂСѓР¶РµРЅРЅС‹С… С„Р°Р№Р»РѕРІ ---*/
+/*--- блок загрузки файлов и загруженных файлов ---*/
 .box { height: 300px; border:1px solid #B3B3B3; border-radius: 3px; background:#fff url(dleimages/shadow.png) repeat-x; overflow: auto; }
     .uploadedfile { width: 115px; height: 130px; margin: 10px 5px 5px 5px; border:1px solid #B3B3B3; box-shadow: 0px 1px 4px rgba(0,0,0,0.3); float: left; text-align: center; background:#fff; }
     .uploadimage { margin-top: 5px; width: 115px; height: 90px; display: table-cell; text-align: center; vertical-align:middle; }
@@ -26,7 +26,7 @@ img { border:0 none; }
     #stmode { padding:10px; }
     .file-box { width: 95%; border:1px solid #B3B3B3; border-radius: 3px; background-color: #F5F5F5; padding: 10px; margin-top: 10px; }
 
-/*--- HTML5 Р·Р°РіСЂСѓР·С‡РёРє С„Р°Р№Р»РѕРІ ---*/
+/*--- HTML5 загрузчик файлов ---*/
 .qq-uploader { position:relative; width: 100%;}
     .qq-upload-button {
         display:block; /* or inline-block */
@@ -55,7 +55,7 @@ img { border:0 none; }
     .qq-upload-failed-text {display:none;}
     .qq-upload-fail .qq-upload-failed-text {display:inline;}
 
-    /*--- С„Р»РµС€ Р·Р°РіСЂСѓР·С‡РёРє С„Р°Р№Р»РѕРІ ---*/
+    /*--- флеш загрузчик файлов ---*/
     .progressWrapper { width: 99%; overflow: hidden; }
     .progressContainer { margin: 5px; padding: 4px; border: solid 1px #B3B3B3; background-color: #F5F5F5; overflow: hidden; }
 
