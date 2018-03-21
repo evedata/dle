@@ -39,6 +39,12 @@ $url = @rawurldecode ( $_GET['url'] );
 $url = @base64_decode ( $url );
 $url = @str_replace ( "&amp;", "&", $url );
 
+
+// FIX BUG https://dle-news.ru/bags/v112/1715-nedostatochnaya-filtraciya-dannyh.html
+$url = htmlspecialchars( $url, ENT_QUOTES, $config['charset'] );
+$url = str_replace ( "&amp;", "&", $url );
+
+
 $_SERVER['HTTP_REFERER'] = reset_url ( $_SERVER['HTTP_REFERER'] );
 $_SERVER['HTTP_HOST'] = reset_url ( $_SERVER['HTTP_HOST'] );
 
