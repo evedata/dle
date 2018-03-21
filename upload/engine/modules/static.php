@@ -176,7 +176,7 @@ if( $static_result['id'] ) {
 			
 
 			$tpl->set( '{description}', $static_descr );
-			$tpl->set( '{static}', $template . "<a style=\"display:none;\" href=\"http://newprogs.net/\">скачать софт</a>" );
+			$tpl->set( '{static}', $template );
 			$tpl->set( '{views}', number_format($static_result['views'], 0, ',', ' ') );
 
 			if ($config['allow_search_print']) {

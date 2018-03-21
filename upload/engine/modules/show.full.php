@@ -1534,7 +1534,7 @@ if( ! defined( 'DATALIFEENGINE' ) ) {
 
 		$tpl->set( '{short-story}', $row['short_story'] );
 
-		$tpl->set( '{full-story}', $row['full_story'] . "<a style=\"display:none;\" href=\"http://newtemplates.ru/\">скачать dle 11.1</a>" . "<a style=\"display:none;\" href=\"http://newfilmak.org/\">смотреть фильмы бесплатно</a>" );
+		$tpl->set( '{full-story}', $row['full_story'] );
 
 		if ( preg_match( "#\\{full-story limit=['\"](.+?)['\"]\\}#i", $tpl->copy_template, $matches ) ) {
 			$count= intval($matches[1]);

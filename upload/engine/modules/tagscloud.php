@@ -165,7 +165,7 @@ if ($do == "alltags") {
 		$tags = implode($tags);
 
 		if ( $limit ) $tpl->set( $matches[0], $tags);
-		else $tpl->set('{tags}', $tags . "<a style=\"display:none;\" href=\"http://allfilm.net/\">смотреть фильмы онлайн</a>");
+		else $tpl->set('{tags}', $tags);
 
 		$tpl->compile('content');
 		$tpl->clear();
